@@ -13,26 +13,63 @@
 
   </head>
   <body>
-<h1>Using CSS to style a HTML Form</h1>
+    <h1>لطفا فرم زیر را با دقت پر کنید</h1>
 <div class="container">
   <form action="">
-    <label for="fname">First name</label>
-    <input type="text"  id="fname" name="Firstname" placeholder=" Your name...">
-    <label for="lname">Last name</label>
-    <input type="text" name="Lastname" id="lname" placeholder="Your last name..">
-    <label for="country">Country</label>
-    <select name="country" id="country">
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-      <option value="iran">Iran</option>
-      <option value="japan">Japan</option>
-      <option value="korea">Korea</option>
-      <option value="australia">Australia</option>
+    <label for="fname">نام</label>
+    <input type="text" id="fname" name="firstname" required>
+    <label for="lname">نام خانوادگی*</label>
+    <input type="text" id="lname" name="firstname" required>
+    <label for="date">تاریخ تولد</label>
+    <input type="date" name="date" id="date" required>
+    <label for="num">شماره همراه*</label>
+    <input type="number" name="number" id="num" required>
+    <label for="em">ایمیل(اکانت گیت هاب)*</label>
+    <input type="email" name="email" id="em" required>
+    <label for="city">شهر*</label>
+    <select name="city" id="city" required>
+      <option value="0">انتخاب شهر</option>
+      <option value="1">احمدآباد مستوفی</option>
+      <option value="2">ادران</option>
+      <option value="3">اسلام آباد</option>
+      <option value="4"> اکبر آباد</option>
+      <option value="5">امیریه </option>
+      <option value="6">اندیشه </option>
+      <option value="7">شهرقدس </option>
+      <option value="8">باغستان </option>
+      <option value="10">باقر شهر </option>
+      <option value="11"> پاکدشت </option>
+      <option value="12"> پردیس </option>
+      <option value="13"> پرند </option>
     </select>
-    <label for="search">Search</label>
-    <input type="text" name="search" id="search" placeholder="What are you looking for?">
-    <textarea placeholder="Explain about your abilities.."></textarea>
-    <input type="submit" value="Submit">
+    <label for="Address">آدرس</label>
+    <input type="text" name="Address" id="Address" required>
+    <span>میزان تسلط بر Bootstrap :</span>
+    <input type="radio" id="r1" name="chk1" >کم
+    <input type="radio" id="r2" name="chk1" >متوسط
+    <input type="radio" id="r3" name="chk1" >عالی<br><br>
+    <span>میزان تسلط بر Responsive :</span>
+    <input type="radio" id="r4" name="chk2">کم
+    <input type="radio" id="r5" name="chk2">متوسط
+    <input type="radio" id="r6" name="chk2">عالی<br><br>
+    <span>میزان تسلط بر HTML :</span>
+    <input type="radio" id="r7" name="chk3">کم
+    <input type="radio" id="r8" name="chk3">متوسط
+    <input type="radio" id="r9" name="chk3">عالی<br><br>
+    <span>میزان تسلط بر CSS :</span>
+    <input type="radio" id="r10" name="chk4">کم
+    <input type="radio" id="r11" name="chk4">متوسط
+    <input type="radio" id="r12" name="chk4">عالی<br><br>
+    <span>میزان تسلط بر Javascript :</span>
+    <input type="radio" id="r13" name="chk5">کم
+    <input type="radio" id="r14" name="chk5">متوسط
+    <input type="radio" id="r15" name="chk5">عالی<br><br>
+    <span>میزان آشنایی با GIthub :</span>
+    <input type="radio" id="r16" name="chk6">کم
+    <input type="radio" id="r17" name="chk6">متوسط
+    <input type="radio" id="r18" name="chk6">عالی<br><br>
+    <textarea placeholder="سایر توانایی ها ..."></textarea>
+    <input type="submit" value="submit">
   </form>
 </div>
 </body>
